@@ -1,0 +1,63 @@
+article h1, article h2, article h3, article h4, article p, article ul, article blockquote, article ol { width: 700px; margin: 0 auto;
+}
+article h1, article h2, article h3, article h4, article h5, article h6 {font-family: 'IBM Plex Sans', sans-serif;}
+article p, article ul, article ol, article blockquote, article li, article a {font-family: 'PT Sans Caption', sans-serif;}
+article h1 { margin-top: 67px; font-size: 38px; line-height: 45px; color: #209FAB;
+}
+article h1 + article p { margin-top: 8px; font-family: 'PT Sans Caption', sans-serif; font-size: 22px; line-height: 32px; color: rgba(0,0,0,.4);
+}
+article h1 + article p + article p { margin-top: 30px;
+}
+article h2 { margin-top: 43px; font-size: 32px; line-height: 36px; color: rgba(0, 0, 0, .8);
+}
+article h2 + article p,
+article h2 + article blockquote { margin-top: 7px;
+}
+article h3 { margin-top: 36px; font-size: 28px; line-height: 34px; color: rgba(0, 0, 0, .8);
+}
+article h3 + article p,
+article h3 + article blockquote { margin-top: 6px;
+}
+article p, article blockquote, article li { margin-top: 29px; font-size: 20px; line-height: 34px;
+}
+article blockquote { font-style: italic;
+}
+article img { display: block; width: 1020px; margin: 79px auto 0; border: 10px double #F79F60; padding: 10px;
+}
+article img + article h2 { margin-top: 79px;
+}
+article img + article p,
+article img + article blockquote,
+article img + article ul { margin-top: 77px;
+}
+article h2 + article img { margin-top: 82px;
+}
+article h3 + article img { margin-top: 81px;
+}
+article blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  quotes: "“" "”" "‘" "’" "“" "”" "‘" "’" "“" "”";
+  font-style: italic;
+}
+article blockquote:before {
+  content: open-quote;
+  text-align: center;
+  float: left;
+  position: relative;
+  right: 30px;
+  line-height: 42px;
+  font-size: 60px;
+  color: #209FAB;
+  }
+article blockquote:after {
+  content: close-quote;
+  text-align: center;
+  float: right;
+  position: relative;
+  left: 30px;
+  line-height: 42px;
+  font-size: 60px;
+  color: #209FAB;
+}
