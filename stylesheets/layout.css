@@ -1,0 +1,22 @@
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'PT Sans', sans-serif;
+}
+p > a {
+  font-size: 24px;
+  color: #209FAB;
+  text-decoration: none;
+}
+p > a:active, p > a:hover, p > a:visited {
+  font-size: 24px;
+  color: #F79F60;
+  text-decoration: none;
+}
+ol {
+  list-style-type: circle;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+ul {
+  list-style-type: decimal;
+  padding-left: 50px;
+  margin-top: 20px;
+}
