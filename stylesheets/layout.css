@@ -1,22 +1,20 @@
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'PT Sans', sans-serif;
 }
-p > a {
-  font-size: 24px;
-  color: #209FAB;
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  border-bottom: 1px solid #aaa;
+  box-shadow: 0 4px 12px 2px rgba(0, 0, 0, .5);
+}
+.menubar a {
+  height: 20px;
   text-decoration: none;
+  color: #aaa;
 }
-p > a:active, p > a:hover, p > a:visited {
-  font-size: 24px;
-  color: #F79F60;
-  text-decoration: none;
-}
-ol {
-  list-style-type: circle;
-  padding-left: 40px;
-  margin-top: 20px;
-}
-ul {
-  list-style-type: decimal;
-  padding-left: 50px;
-  margin-top: 20px;
+.menubar img {
+  height: 80%;
+  width: auto;
 }
