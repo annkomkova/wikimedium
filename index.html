@@ -6,11 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Дом Наркомфина</title>
   <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="javascripts/jquery-3.6.0.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  $(function() {
+    $('.sidebar a').each(function() {
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        var scrollTo = $(this).attr('href');
+        var whitespace = scrollTo == '#s1' ? 70 : 30;
+        $('html,body').animate({
+          scrollTop: $(scrollTo).offset().top - whitespace
+        }, 1000);
+      });
+    });
+    });
+  </script>
 </head>
 <body>
-  <nav class='menu'>
-    <h2>Содержание</h2>
+  <div class="menubar">
+    <a href="index.html"><img src="images/logo.svg" alt=""></a>
+    <a href="about.html">О проекте</a>
+  </div>
+  <nav class='sidebar'>
     <ul>
+      <li>Содержание</li>
       <li><a href="#1">История создания дома Наркомфина</a></li>
       <li><a href="#2">Идеология «опытного дома переходного типа</a></li>
       <li><a href="#3">Участок</a></li>
@@ -37,21 +56,7 @@
       <h1>Дом Наркомфина</h1>
       <p><b>Дом Наркомфина</b> — один из знаковых памятников архитектуры советского <a href="https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%D0%B4_(%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE)">авангарда</a> и <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%B8%D0%B2%D0%B8%D0%B7%D0%BC_(%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE)">rонструктивизма</a>. Построен в <a href="https://ru.wikipedia.org/wiki/1928_%D0%B3%D0%BE%D0%B4">1928</a>—<a href="https://ru.wikipedia.org/wiki/1930_%D0%B3%D0%BE%D0%B4">1930</a> годах по проекту архитекторов <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%BD%D0%B7%D0%B1%D1%83%D1%80%D0%B3,_%D0%9C%D0%BE%D0%B8%D1%81%D0%B5%D0%B9_%D0%AF%D0%BA%D0%BE%D0%B2%D0%BB%D0%B5%D0%B2%D0%B8%D1%87">Моисея Гинзбурга</a>, <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BB%D0%B8%D0%BD%D0%B8%D1%81,_%D0%98%D0%B3%D0%BD%D0%B0%D1%82%D0%B8%D0%B9_%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B5%D0%B2%D0%B8%D1%87">Игнатия Милиниса</a> и инженера <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D0%B8%D1%87_%D0%9F%D1%80%D0%BE%D1%85%D0%BE%D1%80%D0%BE%D0%B2">Сергея Прохорова</a> для работников <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B0%D1%80%D0%B8%D0%B0%D1%82_%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%D0%BE%D0%B2_%D0%A1%D0%A1%D0%A1%D0%A0">Народного комиссариата финансов СССР</a> (Наркомфина). Автор замысла дома Наркомфина М.Я. Гинзбург определял его как «опытный дом переходного типа». Находится в Москве по адресу: <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80">Новинский бульвар</a>, дом 25, корпус 1. </p>
       <p>Долгое время находился в аварийном состоянии, был трижды включён в список «100 главных зданий мира, которым грозит уничтожение». В 2017—2020 годах отреставрирован по проекту АБ «Гинзбург Архитектс», функционирует как жилой дом.</p>
-      <img src="https://img04.rl0.ru/afisha/e1110x-i/daily.afisha.ru/uploads/images/b/05/b05a9338b684a84225f9512f323fe3ac.jpg" alt="Фотография дома Наркомфина">
-      <!-- <nav class='menu'>
-        <h2>Содержание</h2>
-        <ol>
-          <li><a href="#1">История создания дома Наркомфина</a></li>
-          <li><a href="#2">Идеология «опытного дома переходного типа</a></li>
-          <li><a href="#3">Участок</a></li>
-          <li><a href="#4">Состав жилого комплекса</a></li>
-          <li><a href="#5">Архитектура</a></li>
-          <li><a href="#6">Критика проекта</a></li>
-          <li><a href="#7">История эксплуатации и проект реставрации</a></li>
-          <li><a href="#8">Значение проекта в исторической перспективе</a></li>
-          <li><a href="#9">Реальная жизнь в доме Наркомфина</a></li>
-        </ol>
-      </nav> -->
+      <img src="images/narkomfin.jpg" alt="Фотография дома Наркомфина">
     </section>
     <section>
       <h2 id="1">История создания дома Наркомфина</h2> <hr>
