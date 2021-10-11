@@ -61,3 +61,23 @@ article blockquote:after {
   font-size: 60px;
   color: #209FAB;
 }
+article p > article a {
+  font-size: 24px;article
+  color: #209FAB;
+  text-decoration: none;
+}
+article p > article a:active, article p > article a:hover, article p > article a:visited {
+  font-size: 24px;
+  color: #F79F60;
+  text-decoration: none;
+}
+article ol {
+  list-style-type: circle;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+article ul {
+  list-style-type: decimal;
+  padding-left: 50px;
+  margin-top: 20px;
+}
