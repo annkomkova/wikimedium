@@ -1,7 +1,7 @@
 nav {
   width: 300px;
   position: fixed;
-  top: 90px;
+  top: 20px;
   left: 20px;
   padding: 30px;
   box-sizing: border-box;
@@ -11,28 +11,28 @@ nav {
 nav:hover {
   opacity: 1;
   transition: all .1s ease;
-
+}
+nav p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+nav a {
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  margin: 10px 0;
+  line-height: 20px;
+}
+nav ul > ul {
+  margin-left: 10px;
+  color: #777;
 }
 nav > ul > li:first-of-type {
   margin: 0;
   font-weight: bold;
   font-size: 14px;
-}
-nav li {
-  font-size: 16px;
-  color: #121212;
-  margin: 10px;
-  line-height: 20px;
-}
-nav ul {
-  margin-top: 20px;
-  list-style-type: none;
-}
-nav a, nav a:visited {
-  color: #209FAB;
-  text-decoration: none;
-}
-nav a:active, nav a:hover {
-  color: #F79F60;
-  text-decoration: none;
 }
