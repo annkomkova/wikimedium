@@ -1,0 +1,78 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  height: 3252px;
+  display: block;
+}
+html {
+  position: relative;
+  height: 3252px;
+}
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 80px;
+}
+section div {
+  width: 50%;
+  overflow: hidden;
+}
+section h1,
+.bottom_block h1 {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-bottom: 32px;
+}
+section p,
+.bottom_block p {
+  font-size: 26px;
+  line-height: 38px;
+}
+section h1, section p {
+  width: 510px;
+  margin: 0 auto;
+}
+section div:nth-of-type(2) h1,
+section div:nth-of-type(2) p {
+  margin-left: 0;
+}
+section div:nth-of-type(2) h1 {
+  margin-top: 20px;
+}
+.bottom_block h1,
+.bottom_block p {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bottom_block {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+  border-top: 1px solid #bbb;
+}
+.btn {
+  text-decoration: none;
+  border: 1px solid #bbb;
+  padding: 15px 40px;
+  background: white;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 80px 5px 0;
+}
+.btn-black {
+  color: white;
+  background: black;
+  border-color: black;
+}
